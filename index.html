@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <header class="header">
@@ -29,14 +30,14 @@
     </header>
     <main class="main">
         <div class="container d-flex">
-            <div class="introduction-content">
+            <div class="introduction-content" data-aos="fade-right">
                 <h2 class="mb-9">Introduction</h2>
                 <p class="mb-8">Hi, I'm William Lee, a Front-End Developer with a passion for building beautiful and responsive websites that provide an optimal user experience.</p>
                 <img src="img/sparkle-sm.png" alt="sparkle-sm1">
                 <img src="img/sparkle-sm.png" alt="sparkle-sm2">
                 <img src="img/sparkle-sm.png" alt="sparkle-sm3">
             </div>
-            <ul class="d-flex">
+            <ul class="d-flex" data-aos="flip-right">
                 <li class="mr-6"><img src="img/sparkle.png" alt="sparkle"></li>
                 <li class="mr-6"><img src="img/photographer.png" alt="photographer"></li>
                 <li><img src="img/people-2.png" alt="people-2"></li>
@@ -46,7 +47,7 @@
 
     <section class="about">
         <div class="container d-flex justifiy-content-between align-items-center">
-            <ol class="about-list d-flex">
+            <ol class="about-list d-flex" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="800">
                 <li>
                     <p>01</p>
                     <h3>Attention to Detail</h3>
@@ -68,7 +69,7 @@
                     <p>Collaborates and shares ideas.</p>
                 </li>
             </ol>
-            <div class="about-content">
+            <div class="about-content" data-aos="fade-left">
                 <h2>About Me</h2>
                 <p>With over 5 years of experience, I'm proficient in HTML, CSS, JavaScript, jQuery, and React. I have a strong understanding of user experience design and accessibility. I'm always learning new technologies and techniques to stay up-to-date in the field.</p>
             </div>
@@ -77,10 +78,10 @@
 
     <section class="contact">
         <div class="container d-flex justifiy-content-between align-items-center">
-            <div class="contact-me">
+            <div class="contact-me" data-aos="fade-up-right">
                 <h2>CONTACT ME <img src="img/trending_flat_black_24dp 1.png" alt="vector"></h2>
             </div>
-            <ul class="social-list d-flex">
+            <ul class="social-list d-flex" data-aos="zoom-in-left">
                 <li class="mr-5">
                     <a href="#" class="social-link">
                         <img src="img/discord.png" alt="discord">
@@ -101,7 +102,7 @@
     </section>
 
     <section class="project">
-        <div class="container">
+        <div class="container" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
             <h2 class="project-title ">My Projects</h2>
             <div class="d-flex">
                 <img class="mr-6" src="img/Rectangle 10.png" alt="project1">
@@ -127,5 +128,9 @@
             <p>all rights reserved @hexschool2023</p>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
